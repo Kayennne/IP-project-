@@ -8,31 +8,60 @@
     </head>
     
     <form action="action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
     
       <div class="container">
         <form id="myFrm">
 
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" id="uname" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" id="psw" required>
-      
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked"> Remember me
-          </label>
-        </div>
-      
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked"> Remember me
+      </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
 
     <body>
       <h1>Name: <span id="myName">...</span></h1>
       <!-- supposed to show at profile page -->
 
-      <script src="script.js"></script>
+      <script>
+        //retrieve form information when submit
+        let myNameEl = document.getElementById("myName");
+        let username = localStorage.getItem("username");
+        if (username != null && username != "") {
+          myNameEl.innerHTML = username;
+        }
+        
+        document.addEventListener("submit", function (event) {
+          //prevent default action of the form from actually submitting
+          event.preventDefault();
+  
+          //retrieve form values
+          let myName = document.getElementById("uname").value;
+          console.log(myName);
+  
+          
+          //set the name
+          localStorage.setItem('username',myName);
+  
+          document.getElementById("myName").innerHTML = myName;
+          //document.getElementById('myName').textContent = myName;
+  
+          //clear the form upon each sumission
+          document.getElementById("myFrm").reset();
+        });
+      </script>
     </body>
