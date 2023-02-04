@@ -18,6 +18,19 @@ function showSlides() {
     setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
 
+// ================================================= COUNT UP =================================================
+
+
+
+
+
+
+
+
+
+
+
+
 
 //login
 

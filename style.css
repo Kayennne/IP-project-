@@ -44,7 +44,7 @@ body{
     display: none;
 }
 
-img {
+.numbertext img {
     display:flex;
     vertical-align: middle;
     width: 100%
@@ -106,17 +106,54 @@ img {
     height: 35px;
     background-color: #AB866A;
     border-radius: 7px;
+    margin-bottom: 20px;
 
     
 }
 
-/* INDEX PAGE - NUMBER CIRCLES */
+/* INDEX PAGE - NUMBER STATS */
 
-.numbercircles {
-    background-color: #AB866A;
+.numberstats {
+    height: 50px;
+    background-color: #E7CEBC;
+}
+
+/* INDEX PAGE - ORGANISATIONS */
+
+.organisation h1{
+    color: #E7CEBC;
+    text-align: center;
+    vertical-align: middle;
+}
+.giving img, .ntuc img {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+/* INDEX PAGE - MENTAL WELLNESS */
+
+.professionals h1 {
+    color: #E7CEBC;
 }
 
 
+
+
+
+
+/* INDEX PAGE - FOOTER */
+
+footer {
+    background-color: #AB866A;
+}
+
+.line h1 {
+    color: #E7CEBC;
+}
 
 
 /* ========================== WEB VERSION ========================== */
@@ -130,5 +167,15 @@ img {
         
     }
     
+    .wrapper {
+        width: 85vw;
+    }
+
+    .container {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    
+    }
 
 }
