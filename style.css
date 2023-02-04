@@ -6,6 +6,8 @@ height = 844 */
 /* CHECK IN */
 body{
     background-color: #C49D82;
+    margin: 0;
+    padding: 0;
 }
 
 .text h1 {
@@ -18,15 +20,20 @@ body{
     width: 300px;
     height: 100px;
     background-color: #AB866A;
+    color: #E7CEBC;
     border-radius: 15px;
-    margin-top: 15px;
-    justify-content: center;
-    text-align: center;
-}
+    margin-bottom: 30px;
+    justify-content: center !important;
+    align-content: center !important;
+    margin: 0 auto;
+    margin-top: 30px;
+} 
 
 .box p {
     display: flex;
     align-items: center;  
+    text-align: center;
+    
 }
 
 
@@ -38,8 +45,10 @@ body{
 }
 
 img {
+    display:flex;
     vertical-align: middle;
-    height: 250px;
+    width: 100%
+    
 }
 
 .slideshow-container {
@@ -67,15 +76,44 @@ img {
     justify-content: center;
     color: #E7CEBC;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+/* .wearereach h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+
+
 
 .rect1, .rect2 {
     display:flex;
-    height: px;
-    height: 100px;
-    width: 150px;
+    height: 10px;
+    width: 105px;
     background-color: #AB866A;
+}
 
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wearereach .box {
+    display: flex;
+    width: 100px;
+    height: 35px;
+    background-color: #AB866A;
+    border-radius: 7px;
+
+    
+}
+
+/* INDEX PAGE - NUMBER CIRCLES */
+
+.numbercircles {
+    background-color: #AB866A;
 }
 
 
@@ -85,8 +123,11 @@ img {
 
 @media screen and (min-width:992px) {
     img {
+        display: flex;
         vertical-align: middle;
-        height: 700px;
+        height: 800px;
+        widows: 100%;
+        
     }
     
 
