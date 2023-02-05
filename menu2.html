@@ -82,7 +82,7 @@
     <section class="overlay"></section>
 
     <script>
-      const navBar = document.querySelector("nav"),
+      let navBar = document.querySelector("nav"),
         menuBtns = document.querySelectorAll(".menu-icon"),
         overlay = document.querySelector(".overlay");
 
@@ -96,5 +96,6 @@
         navBar.classList.remove("open");
       });
     </script>
+
   </body>
 </html>

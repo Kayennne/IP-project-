@@ -8,10 +8,94 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+            <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     </head>
 
     <body>
         <header>
+            <nav>
+                <div class="logo">
+                  <i class="bx bx-menu menu-icon"></i>
+                  <span class="logo-name">REACH</span>
+                </div>
+                <div class="sidebar">
+                  <div class="logo">
+                    <i class="bx bx-menu menu-icon"></i>
+                    <span class="logo-name">REACH</span>
+                  </div>
+          
+                  <div class="sidebar-content">
+                    <ul class="lists">
+                      <li class="list">
+                        <a href="#" class="nav-link">
+                          <i class="bx bxs-home-heart icon"></i>
+                          <span class="link">Home</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="#" class="nav-link">
+                          <i class="bx bxs-calendar icon"></i>
+                          <span class="link">Calendar</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="#" class="nav-link">
+                          <i class="bx bx-list-ol icon"></i>
+                          <span class="link">To-Do List</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="#" class="nav-link">
+                          <i class="bx bxs-heart-circle icon"></i>
+                          <span class="link">Mental Wellness</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="#" class="nav-link">
+                          <i class="bx bxs-conversation icon"></i>
+                          <span class="link">Forum</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="#" class="nav-link">
+                          <i class="bx bxs-gift icon"></i>
+                          <span class="link">Rewards</span>
+                        </a>
+                      </li>
+                      <li class="list">
+                        <a href="#" class="nav-link">
+                          <i class="bx bxs-user-circle icon"></i>
+                          <span class="link">Account</span>
+                        </a>
+                      </li>
+                    </ul>
+          
+                    <div class="bottom-cotent">
+          
+                    </div>
+                  </div>
+                </div>
+            </nav>
+          
+              <section class="overlay"></section>
+          
+              <script>
+                let navBar = document.querySelector("nav"),
+                  menuBtns = document.querySelectorAll(".menu-icon"),
+                  overlay = document.querySelector(".overlay");
+          
+                menuBtns.forEach((menuBtn) => {
+                  menuBtn.addEventListener("click", () => {
+                    navBar.classList.toggle("open");
+                  });
+                });
+          
+                overlay.addEventListener("click", () => {
+                  navBar.classList.remove("open");
+                });
+              </script>
+
             <div class="slideshow-container">
 
                 <div class="mySlides fade">

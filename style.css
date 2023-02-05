@@ -48,7 +48,7 @@ body{
     display:flex;
     vertical-align: middle;
     width: 100%;
-    background-image: none;
+    
     
 }
 
@@ -56,7 +56,6 @@ body{
     width: 100%;
     background-position: center;
     background-size: cover;
-    position: relative;
     margin: auto;
 }
 
@@ -165,18 +164,18 @@ footer {
     font-family: "Poppins", sans-serif;
   }
 
-  body {
-    min-height: 100%;
-  }
+
 
   nav {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     height: 70px;
     width: 100%;
     display: flex;
+    background: #AB866A;
     align-items: center;
+
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   }
   nav .logo {
