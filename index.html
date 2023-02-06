@@ -78,23 +78,8 @@
                 </div>
             </nav>
           
-              <section class="overlay"></section>
-          
-              <script>
-                let navBar = document.querySelector("nav"),
-                  menuBtns = document.querySelectorAll(".menu-icon"),
-                  overlay = document.querySelector(".overlay");
-          
-                menuBtns.forEach((menuBtn) => {
-                  menuBtn.addEventListener("click", () => {
-                    navBar.classList.toggle("open");
-                  });
-                });
-          
-                overlay.addEventListener("click", () => {
-                  navBar.classList.remove("open");
-                });
-              </script>
+            <section class="overlay"></section>
+      
 
             <div class="slideshow-container">
 
@@ -122,6 +107,7 @@
                 <span class="dot"></span> 
             </div>
 
+            <script src="script.js" defer></script>
         </header>
 
         <section class="wearereach">

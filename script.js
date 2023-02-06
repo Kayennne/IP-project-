@@ -1,3 +1,35 @@
+
+
+// ================================================= COUNT UP =================================================
+
+
+
+
+
+
+
+
+
+
+
+// ========================================= MENU =========================================
+
+const navBar = document.querySelector("nav"),
+  menuBtns = document.querySelectorAll(".menu-icon"),
+  overlay = document.querySelector(".overlay");
+
+menuBtns.forEach((menuBtn) => {
+  menuBtn.addEventListener("click", () => {
+    navBar.classList.toggle("open");
+  });
+});
+
+overlay.addEventListener("click", () => {
+  navBar.classList.remove("open");
+});
+
+
+// ================================ SLIDESHOW ================================
 let slideIndex = 0;
 showSlides();
 
@@ -17,37 +49,6 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 7000); // Change image every 2 seconds
 }
-
-// ================================================= COUNT UP =================================================
-
-
-
-
-
-
-
-
-
-
-
-// ========================================= MENU =========================================
-
-// const navBar = document.querySelector("nav"),
-//   menuBtns = document.querySelectorAll(".menu-icon"),
-//   overlay = document.querySelector(".overlay");
-
-// menuBtns.forEach((menuBtn) => {
-//   menuBtn.addEventListener("click", () => {
-//     navBar.classList.toggle("open");
-//   });
-// });
-
-// overlay.addEventListener("click", () => {
-//   navBar.classList.remove("open");
-// });
-
-
-
 
 
 
