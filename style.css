@@ -24,17 +24,23 @@ body{
     color: #E7CEBC;
     border-radius: 15px;
     margin-bottom: 30px;
-    justify-content: center !important;
-    align-content: center !important;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     margin-top: 30px;
+    cursor: pointer;
 } 
 
-.box p {
+.box:active {
+    background: #9e7b5f;
+}
+
+.box p a{
     display: flex;
     align-items: center;  
     text-align: center;
-    
+    color: #E7CEBC;
+    text-decoration: none;
 }
 
 
@@ -171,7 +177,7 @@ footer {
 
 
 
-/* nav {
+nav {
   position: fixed;
   z-index: 1;
   position: absolute;
@@ -184,7 +190,7 @@ footer {
   align-items: center;
 
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-} */
+}
 
 .navig {
   /* position: fixed; */
@@ -340,6 +346,7 @@ input {
   border: 0;
   outline: 0;
   margin-left: 10px;
+  color: #AB866A;
 }
 
 .personal {
@@ -356,6 +363,19 @@ input {
   width: 312px;
   margin: 15px 0;
   border-radius: 3px;
+}
+
+.reg {
+  font-size: 10px;
+  color: #E7CEBC;
+}
+
+.reg a {
+  color: #E7CEBC;
+}
+
+.personal .done {
+  margin-bottom: 20px;
 }
 
 
@@ -376,7 +396,6 @@ input {
 .phrase {
   display: flex;
   padding-top: 20px;
-  padding-left: 20px;
   flex-direction: column;
   align-items: center;
 }
@@ -420,6 +439,25 @@ input {
   border-radius: 5px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+
+button {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  width: 120px;
+  height: 45px;
+  cursor: pointer;
+}
+
+button {
+  color: #E7CEBC;
+}
+
+.done:active {
+  background-color: #9e7b5f;
 }
 
 .trust {
@@ -431,15 +469,21 @@ input {
   color:#E7CEBC;
 }
 
-button {
+.ans input {
+  width: 290px;
+  color: #E7CEBC;
+}
+
+/* .done {
   background: transparent;
   outline: 0;
   border: 0;
-  
-}
-
-button h3 {
   color: #E7CEBC;
+} */
+
+.navi img {
+  color: #E7CEBC;
+  width: 20px;
 }
 
 
@@ -496,12 +540,59 @@ button h3 {
     }
 
 
+  
+    /* ============================ MYSELF/FAM/CHILD/RS ============================ */
 
+    .navi img {
+      color: #E7CEBC;
+      width: 30px;
+      height: 30px;
+    }
 
+    .rect1, .rect2 {
+      height: 17px;
+      width: 130px;
+    }
 
+    .myself {
+      padding-top: 20px;
+    }
 
+    .myself h1 {
+      font-size: 80px;
+    }
 
+    .phrase {
+      font-size: 25px;
+    }
 
+    .qn {
+      width: 500px;
+      font-size: 20px;
+      margin-right: 93px;
+    }
+
+    .questions {
+      font-size: 16px;
+    }
+    
+    .ans {
+      display: flex;
+      background-color: #AB866A;
+      height: 45px;
+      margin-top: 10px;
+      width: 600px;
+      border-radius: 5px;
+    }
+
+    .ans input {
+      width: 550px;
+    }
+
+    .trust {
+      font-size: 25px;
+      width: 450px;
+    }
 
 
 
