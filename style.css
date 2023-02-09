@@ -186,14 +186,14 @@ nav {
   height: 70px;
   width: 100%;
   display: flex;
-  background: #AB866A;
+  background:#C49D82;
   align-items: center;
 
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
-.navig {
-  /* position: fixed; */
+/* .navig {
+  position: fixed;
   z-index: 1;
   position: absolute;
   top: 0;
@@ -205,12 +205,13 @@ nav {
   align-items: center;
 
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
-}
+} */
 
 nav .logo {
   display: flex;
   align-items: center;
-  margin: 0 24px;
+  padding-left: 10px;
+  /* margin: 0 24px; */
 }
 .logo .menu-icon {
   color: #E7CEBC;
@@ -289,14 +290,26 @@ nav.open ~ .overlay {
   pointer-events: auto;
 }
 
+/* navbar */
+
+.navbar {
+  display: none;
+}
+
+
+
+
+
+
+
 /* ======================== COM NAVIGATION ======================== */
 
-.navi {
+/* .navi {
   display: flex;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
   /* ========================= REGISTER/LOGIN PAGE ========================= */
 
@@ -597,10 +610,90 @@ button {
 
 
 
+    /* ==================== NAVBAR ==================== */
+
+    .logo i {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .navbar {
+      display: block;
+      width: inherit;
+    }
+
+    .logo {
+      width: 100%;
+    }
+
+    .navbar ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-decoration: none;
+      list-style: none;
+      width: max-content;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+    }
+
+}
 
 
+@media screen and (min-width:800px) {
+  .logo i {
+    display: none;
+  }
 
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 15px
+  }
 
+  .navbar {
+    display: block;
+    width: inherit;
+    padding-right: 10px;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    width: max-content;
+  }
+
+  .navbar ul li a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #E7CEBC;
+  }
+
+  .navbar ul li {
+    margin: 5px
+  }
+
+  .navbar ul li a:hover {
+    color:#AB866A;
+    background: #E7CEBC;
+    padding: 5px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+  }
 
 
 }
