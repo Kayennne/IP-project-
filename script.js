@@ -23,11 +23,11 @@ menuBtns.forEach((menuBtn) => {
     navBar.classList.toggle("open");
   });
 });
-
+/*
 overlay.addEventListener("click", () => {
   navBar.classList.remove("open");
 });
-
+*/
 
 // ================================ SLIDESHOW ================================
 let slideIndex = 0;
@@ -96,6 +96,7 @@ $(document).ready(function () {
 
   $("#registerbtn").on("click", function (e) {
     e.preventDefault();
+    console.log('test');
 
     let contactUsername = $("#create_username").val();
     let contactEmail = $("#create_email").val();

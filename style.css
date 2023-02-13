@@ -1,17 +1,22 @@
 /* mobile
 width = 390
 height = 844 */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Libre Bodoni', serif;
+}
 
 /* CHECK IN */
 body{
-    background-color: #C49D82;
+    background-color: #E6DCD3;
     margin: 0;
     padding: 0;
 }
 
 .text h1 {
-    color: #E7CEBC;
+    color: #A2847A;
     text-align: center;
     padding-top: 50px;
 }
@@ -20,8 +25,8 @@ body{
     display: flex;
     width: 300px;
     height: 100px;
-    background-color: #AB866A;
-    color: #E7CEBC;
+    background-color: #A2847A;
+    color: #E6DCD3;
     border-radius: 15px;
     margin-bottom: 30px;
     justify-content: center;
@@ -31,18 +36,22 @@ body{
     cursor: pointer;
 } 
 
-.box:active {
-    background: #9e7b5f;
+.box:hover {
+    background: #8c7066;
 }
 
-.box p a{
+.box a p {
     display: flex;
     align-items: center;  
     text-align: center;
-    color: #E7CEBC;
-    text-decoration: none;
+    color: #E6DCD3;
+    
 }
 
+.box a {
+  text-decoration: none;
+  color: #E6DCD3;
+}
 
 /* INDEX PAGE - SLIDESHOW */
 
@@ -85,7 +94,7 @@ body{
     
     display: flex;
     justify-content: center;
-    color: #E7CEBC;
+    color: #A2847A;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -102,7 +111,7 @@ body{
     display:flex;
     height: 10px;
     width: 105px;
-    background-color: #AB866A;
+    background-color: #A2847A;
 }
 
 .box2 {
@@ -111,28 +120,63 @@ body{
     align-items: center;
 }
 
+.wearereach .grp .circle {
+  margin: 10px 0;
+}
 .wearereach .box {
     display: flex;
     width: 100px;
     height: 35px;
-    background-color: #AB866A;
+    background-color: #A2847A;
     border-radius: 7px;
     margin-bottom: 20px;
 
-    
 }
+
+
 
 /* INDEX PAGE - NUMBER STATS */
 
 .numberstats {
-    height: 50px;
-    background-color: #E7CEBC;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #A2847A;
+}
+
+.numberstats .grp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.numberstats .grp .circle {
+  background: #E6DCD3;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.numberstats .grp .circle p{
+  color: #A2847A;
+}
+.numberstats .grp p {
+  color: #E6DCD3;
 }
 
 /* INDEX PAGE - ORGANISATIONS */
 
+.organisation {
+  margin-top: 20px;
+}
+
 .organisation h1{
-    color: #E7CEBC;
+    color: #A2847A;
     text-align: center;
     vertical-align: middle;
 }
@@ -148,32 +192,61 @@ body{
 /* INDEX PAGE - MENTAL WELLNESS */
 
 .professionals h1 {
-    color: #E7CEBC;
+    display: flex;
+    color: #A2847A;
+    text-align: center;
 }
 
+.professionals .prof {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 
+}
 
+.professionals .prof .pic img {
+    width: 170px;
+}
+
+.professionals .prof p {
+  color: #A2847A;
+}
 
 
 
 /* INDEX PAGE - FOOTER */
 
 footer {
-    background-color: #AB866A;
+    background-color: #A2847A;
 }
 
 .line h1 {
-    color: #E7CEBC;
+    text-align: center;
+    color: #E6DCD3;
+    font-size: 25px;
+    padding-top: 15px;
 }
 
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+footer ul li a {
+  color: #E6DCD3;
+}
+
+.contact p {
+  color: #E6DCD3;
+  padding: 15px 20px;
+}
 /* =========== MENU =========== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
+
 
 
 
@@ -186,9 +259,8 @@ nav {
   height: 70px;
   width: 100%;
   display: flex;
-  background:#C49D82;
+  background:#E6DCD3;
   align-items: center;
-
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -214,13 +286,13 @@ nav .logo {
   /* margin: 0 24px; */
 }
 .logo .menu-icon {
-  color: #E7CEBC;
+  color: #A2847A;
   font-size: 24px;
   margin-right: 14px;
   cursor: pointer;
 }
 .logo .logo-name {
-  color: #E7CEBC;
+  color: #A2847A;
   font-size: 22px;
   font-weight: 500;
 }
@@ -231,7 +303,7 @@ nav .sidebar {
   height: 100%;
   width: 260px;
   padding: 20px 0;
-  background-color: #A0816C;
+  background-color: #937668;
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease;
 }
@@ -257,21 +329,21 @@ nav.open .sidebar {
   text-decoration: none;
 }
 .lists .nav-link:hover {
-  background-color: #C49D82;
+  background-color: #A2847A;
 }
 .nav-link .icon {
   margin-right: 14px;
   font-size: 20px;
-  color: #E7CEBC;
+  color: #E6DCD3;
 }
 .nav-link .link {
   font-size: 16px;
-  color: #E7CEBC;
+  color: #E6DCD3;
   font-weight: 400;
 }
 .lists .nav-link:hover .icon,
 .lists .nav-link:hover .link {
-  color: #E7CEBC;
+  color: #E6DCD3;
 }
 .overlay {
   position: fixed;
@@ -297,6 +369,95 @@ nav.open ~ .overlay {
 }
 
 
+/* ============= MENTAL WELLNESS ============= */
+
+.mwtitle {
+  display: flex;
+  padding: 30px 0;
+  margin-top: 90px;
+  flex-direction: column;
+  align-items: center;
+  background: #A2847A;
+  
+}
+
+.mwtitle h2, .mwtitle h5 {
+  color: #E6DCD3;
+}
+
+.seek {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.seek h3 {
+  color:#A2847A;
+  font-size: 15px;
+     
+}
+
+/* .whototal {
+  display: flex;
+} */
+
+/* .whototal .who {
+  padding: 30px;
+} */
+
+.seek .who ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seek .who ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  width: 130px;
+  height: 60px;
+  list-style: none;
+  background: #A2847A;
+  border-radius: 10px;
+
+}
+
+.seek .who ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #E6DCD3;
+  text-decoration: none;
+  width: 130px;
+  height: 60px;
+}
+
+.seek ul li:hover {
+  color: #E6DCD3;
+  background: #b5998f;
+}
+
+.goal {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.goal h5, .goal h1 {
+  color: #A2847A;
+  text-align: center;
+}
+
+
+
 
 
 
@@ -304,12 +465,12 @@ nav.open ~ .overlay {
 
 /* ======================== COM NAVIGATION ======================== */
 
-/* .navi {
+.navi {
   display: flex;
   padding: 20px;
   justify-content: space-between;
   align-items: center;
-} */
+}
 
   /* ========================= REGISTER/LOGIN PAGE ========================= */
 
@@ -333,11 +494,10 @@ nav.open ~ .overlay {
 }
 
 .title h1{
-  color: #E7CEBC;
+  color: #A2847A;
 }
 .profile img {
   width: 140px;
-  padding: 15px;
   padding-top: 10px;
   padding-right: 10px;
 }
@@ -346,12 +506,21 @@ nav.open ~ .overlay {
   display: flex;
   flex-direction: column;
 }
+
 .name .first, .name .last{
   display: flex;
-  background-color: #E7CEBC;
+  background-color: #A2847A;
   height: 40px;
   margin: 15px 0;
   border-radius: 3px;
+}
+
+.name input::placeholder {
+  color: #E6DCD3;
+}
+
+.personal .info input::placeholder {
+  color:#E6DCD3;
 }
 
 input {
@@ -359,7 +528,7 @@ input {
   border: 0;
   outline: 0;
   margin-left: 10px;
-  color: #AB866A;
+  color: #E6DCD3;
 }
 
 .personal {
@@ -371,7 +540,7 @@ input {
 
 .info {
   display: flex;
-  background-color: #E7CEBC;
+  background-color: #A2847A;
   height: 40px;
   width: 312px;
   margin: 15px 0;
@@ -380,16 +549,17 @@ input {
 
 .reg {
   font-size: 10px;
-  color: #E7CEBC;
+  color: #E6DCD3;
 }
 
 .reg a {
-  color: #E7CEBC;
+  color: #E6DCD3;
 }
 
 .personal .done {
   margin-bottom: 20px;
 }
+
 
 
 /* ============================ MYSELF/FAM/CHILD/RS ============================ */
@@ -401,7 +571,8 @@ input {
 }
 
 .myself h1 {
-  color: #E7CEBC;
+  text-align: center;
+  color: #A2847A;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -414,14 +585,14 @@ input {
 }
 
 .phrase p {
-  color: #E7CEBC;
+  color: #A2847A;
   padding-top: 5px;
 
 }
 
 .qn {
   padding-top: 20px;
-  color:#E7CEBC;
+  color:#A2847A;
   width: 320px;
 }
 
@@ -433,7 +604,7 @@ input {
 
 .ans {
   display: flex;
-  background-color: #AB866A;
+  background-color: #A2847A;
   height: 35px;
   width: 70px;
   margin-top: 10px;
@@ -445,8 +616,8 @@ input {
   display: flex;
   margin: auto;
   margin-top: 30px;
-  background-color: #AB866A;
-  color: #E7CEBC;
+  background-color: #A2847A;
+  color: #E6DCD3;
   width: 120px;
   height: 45px;
   border-radius: 5px;
@@ -466,7 +637,7 @@ button {
 }
 
 button {
-  color: #E7CEBC;
+  color: #E6DCD3;
 }
 
 .done:active {
@@ -479,12 +650,12 @@ button {
   margin-bottom: 20px;
   width: 320px;
   text-align: center;
-  color:#E7CEBC;
+  color:#A2847A;
 }
 
 .ans input {
   width: 290px;
-  color: #E7CEBC;
+  color: #E6DCD3;
 }
 
 /* .done {
@@ -495,9 +666,33 @@ button {
 } */
 
 .navi img {
-  color: #E7CEBC;
+  color: #A2847A;
   width: 20px;
 }
+
+
+
+/* =================== TODO LIST =================== */
+
+.bigtodo {
+  padding-top: 50px;
+}
+
+.bigtodo hr {
+  width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ==================================================== WEB VERSION ==================================================== */
@@ -531,7 +726,7 @@ button {
 
     .name .first, .name .last{
       display: flex;
-      background-color: #E7CEBC;
+      background-color: #A2847A;
       height: 50px;
       width: 250px;
       margin: 15px 0;
@@ -540,7 +735,7 @@ button {
 
     .info {
       display: flex;
-      background-color: #E7CEBC;
+      background-color: #A2847A;
       height: 50px;
       width: 550px;
       margin: 15px 0;
@@ -552,19 +747,23 @@ button {
       height: 300px;
     }
 
+    /* ========= MENTAL WELLNESS ========= */
+    
+    .whototal {
+      display: flex;
+    }
 
-  
     /* ============================ MYSELF/FAM/CHILD/RS ============================ */
 
     .navi img {
-      color: #E7CEBC;
+      color: #A2847A;
       width: 30px;
       height: 30px;
     }
 
     .rect1, .rect2 {
       height: 17px;
-      width: 130px;
+      width: 135px;
     }
 
     .myself {
@@ -591,7 +790,7 @@ button {
     
     .ans {
       display: flex;
-      background-color: #AB866A;
+      background-color: #A2847A;
       height: 45px;
       margin-top: 10px;
       width: 600px;
@@ -680,7 +879,7 @@ button {
     display: inline-block;
     padding: 5px;
     text-decoration: none;
-    color: #E7CEBC;
+    color: #A2847A;
   }
 
   .navbar ul li {
@@ -688,11 +887,49 @@ button {
   }
 
   .navbar ul li a:hover {
-    color:#AB866A;
-    background: #E7CEBC;
+    color: #E6DCD3;
+    background: #b5998f;
     padding: 5px;
     border-radius: 7px;
     transition: all 0.3s ease;
+  }
+
+  /*=== MENTAL WELLNESS ===*/
+  .whototal {
+    display: flex;
+  }
+  
+}
+
+@media screen and (min-width:425px) {
+  .whototal {
+    display: flex;
+  }
+  
+}
+
+@media screen and (max-width:330px) {
+
+  .qn {
+    width: 300px;
+    padding-left: 7px;
+  }
+
+  /* .questions {
+
+  }
+   */
+  .ans {
+    display: flex;
+    width: 290px;
+  }
+
+  .ans input {
+    width: 270px;
+  }
+
+  .trust {
+    width: 295px;
   }
 
 
