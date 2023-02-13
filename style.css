@@ -675,13 +675,97 @@ button {
 /* =================== TODO LIST =================== */
 
 .bigtodo {
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: #A2847A;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-radius: 7px;
 }
 
-.bigtodo hr {
-  width: 20px;
+.bigtodo p {
+  padding-left: 10px;
+  color: #E6DCD3;
 }
 
+.todo p {
+  display: flex;
+  align-items: center;
+  background: #D8CABF;
+  color: #8e7066;
+  height: 60px;
+  width: 270px;
+  border-radius: 7px;
+}
+
+.todo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.separate {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.impt {
+  background: #A2847A;
+    margin: 5px;
+    border-radius: 7px;
+    width: 260px;
+}
+
+.nodone {
+  background: #E6DCD3;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  border-radius: 7px;
+  padding-left: 5px;
+}
+
+.nodone p {
+  color: #A2847A;
+  font-size: 14px
+}
+
+.impt h6 {
+  padding: 12px;
+  color: #E6DCD3;
+}
+
+.finish {
+  background: #A2847A;
+  margin: 5px;
+  border-radius: 7px;
+  width: 260px;
+}
+
+.finish p {
+  background: #E6DCD3;
+  color: #A2847A;
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  border-radius: 7px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+.finish h6 {
+  padding: 12px;
+  color: #E6DCD3;
+}
 
 
 
