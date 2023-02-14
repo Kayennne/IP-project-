@@ -244,11 +244,11 @@ footer ul li a {
   color: #E6DCD3;
   padding: 15px 20px;
 }
+
+
+
+
 /* =========== MENU =========== */
-
-
-
-
 
 nav {
   position: fixed;
@@ -286,13 +286,13 @@ nav .logo {
   /* margin: 0 24px; */
 }
 .logo .menu-icon {
-  color: #A2847A;
+  color: #8c7066;
   font-size: 24px;
   margin-right: 14px;
   cursor: pointer;
 }
 .logo .logo-name {
-  color: #A2847A;
+  color: #8c7066;
   font-size: 22px;
   font-weight: 500;
 }
@@ -549,11 +549,11 @@ input {
 
 .reg {
   font-size: 10px;
-  color: #E6DCD3;
+  color: #A2847A;
 }
 
 .reg a {
-  color: #E6DCD3;
+  color: #A2847A;
 }
 
 .personal .done {
@@ -768,15 +768,117 @@ button {
 }
 
 
+/* ======= TROPHIES ======= */
+
+.search {
+  display: flex;
+  background: #A2847A;
+  margin-top: 100px;
+  margin-left: 10px;
+  width: 270px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.search input {
+  width: 250px;
+}
+
+.search input::placeholder {
+  color: #E6DCD3
+}
+
+.trophies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.trophies .sketchfab-embed-wrapper {
+  margin: 15px;
+}
 
 
 
+/* ======= ACCOUNT ======= */
 
+.accdetails {
+  display: flex;
+  background: #A2847A;
+  margin-top: 90px;
+  height: 150px;
+  align-items: center;
+}
 
+.accdetails img {
+  width: 120px;
+  margin-left: 10px;
+}
 
+.accstats {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.like {
+  background: #A2847A;
+    width: 140px;
+    height: 100px;
+    border-radius: 7px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
 
+.like p {
+  font-size: 14px;
+  color:#E6DCD3;
+}
 
+.like h3 {
+  color: #E6DCD3;
+}
+
+.owned h1{
+  margin: 15px;
+  color: #8c7066;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.posts h1, .posts h5 {
+  color: #8c7066;
+}
+
+.posts .show {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts .show p{
+  margin-top: 10px;
+  padding-left: 5px;
+  background: #D8CABF;
+  width: 270px;
+  height: 25px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.posts .show a{
+  margin-top: 5px;
+  color: #8c7066;
+}
 
 
 /* ==================================================== WEB VERSION ==================================================== */
@@ -963,7 +1065,7 @@ button {
     display: inline-block;
     padding: 5px;
     text-decoration: none;
-    color: #A2847A;
+    color: #8c7066;
   }
 
   .navbar ul li {

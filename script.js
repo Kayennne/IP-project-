@@ -14,7 +14,7 @@
 
 // ========================================= MENU =========================================
 
-const navBar = document.querySelector("nav"),
+ const navBar = document.querySelector("nav"),
   menuBtns = document.querySelectorAll(".menu-icon"),
   overlay = document.querySelector(".overlay");
 
@@ -23,11 +23,12 @@ menuBtns.forEach((menuBtn) => {
     navBar.classList.toggle("open");
   });
 });
-/*
-overlay.addEventListener("click", () => {
-  navBar.classList.remove("open");
-});
-*/
+
+
+// overlay.addEventListener("click", () => {
+//   navBar.classList.remove("open");
+// });
+
 
 // ================================ SLIDESHOW ================================
 let slideIndex = 0;
