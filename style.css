@@ -242,7 +242,7 @@ footer ul li a {
 
 .contact p {
   color: #E6DCD3;
-  padding: 15px 20px;
+  padding: 5px 20px;
 }
 
 
@@ -596,6 +596,10 @@ input {
   width: 320px;
 }
 
+.qn h5 {
+  color: #8c7066;
+}
+
 .questions {
   display: flex;
   flex-direction: column;
@@ -615,6 +619,7 @@ input {
 .done {
   display: flex;
   margin: auto;
+  margin-bottom: 20px;
   margin-top: 30px;
   background-color: #A2847A;
   color: #E6DCD3;
@@ -640,6 +645,11 @@ button {
   color: #E6DCD3;
 }
 
+.done button a {
+  text-decoration: none;
+  color: #E6DCD3;
+}
+
 .done:active {
   background-color: #9e7b5f;
 }
@@ -657,6 +667,12 @@ button {
   width: 290px;
   color: #E6DCD3;
 }
+
+.ending .done button a {
+  text-decoration: none;
+  color: #E6DCD3;
+}
+
 
 /* .done {
   background: transparent;
@@ -799,7 +815,31 @@ button {
   margin: 15px;
 }
 
+.trophies .animalname{
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin: auto;
+  color: #8c7066;
+}
 
+.sub button {
+  background: #A2847A;
+  border-radius: 7px;
+  width: 75px;
+  height: 35px;
+  font-size: 10px;
+}
+
+.sub button:hover {
+  background: #8c7066;
+}
+
+.sub {
+  width: 290px;
+  margin: auto;
+  padding: 10px 0;
+}
 
 /* ======= ACCOUNT ======= */
 
@@ -865,14 +905,17 @@ button {
 }
 
 .posts .show p{
+  display: flex;
+  font-size: 15px;
+  align-items: end;
   margin-top: 10px;
   padding-left: 5px;
   background: #D8CABF;
+  color: #8c7066;
   width: 270px;
   height: 25px;
   border-radius: 7px;
-  display: flex;
-  align-items: center;
+
 }
 
 .posts .show a{
@@ -956,6 +999,155 @@ button {
   background: #D8CABF;
   border-radius: 7px;
 }
+
+
+/* ========= FORUM ========= */
+
+.search2 {
+  display: flex;
+  background: #A2847A;
+  margin-top: 100px;
+  width: 270px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.search2 input::placeholder {
+  color: #E6DCD3;
+  
+}
+
+.search2 input {
+  width: 250px;
+}
+
+.smth {
+  width: 290px;
+  background: #D8CABF;
+  display: flex;
+  margin: 10px;
+  height: 25px;
+  border-radius: 7px;
+}
+
+.searchcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.sect .n  p {
+  padding-left: 17px;
+  padding-bottom: 10px;
+  color: #8c7066;
+}
+
+.sect .posted {
+  background: #D8CABF;
+  width: 290px;
+  margin: auto;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+.sect .posted .cube {
+  display: flex;
+  margin-bottom: 15px;
+  padding-top: 5px;
+}
+
+.postsmth {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+
+
+.posted .cube img {
+  width: 40px;
+  height: 40px;
+}
+
+.smth input::placeholder {
+  color:#A2847A
+}
+
+.smth input {
+  width: 270px;
+  color:#A2847A
+}
+
+.posted .cube p {
+  display: flex;
+  align-items: center;
+  color: #A2847A;
+  font-size: 15px;
+}
+
+.bubble {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+
+.bubble img {
+  width: 20px;
+}
+
+.bubble p {
+  margin: 0 7px;
+  color: #A2847A;
+}
+
+.topcomment {
+  background: #D8CABF;
+  width: 290px;
+  margin: auto;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.topcomment .posted p {
+  padding: 10px;
+  color: #A2847A;
+  font-size: 15px;
+} 
+
+/* ====== THANKYOU ====== */
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.thankyou h1 {
+  text-align: center;
+  width: 290px;
+  color: #8c7066;
+}
+
+.thankyou h5 {
+  color: #8c7066;
+}
+
+.tapanywhere {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.tapanywhere a {
+  color: #8c7066;
+}
+
 
 
 /* ==================================================== WEB VERSION ==================================================== */
