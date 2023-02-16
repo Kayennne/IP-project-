@@ -94,7 +94,7 @@ body{
     
     display: flex;
     justify-content: center;
-    color: #A2847A;
+    color:#8c7066;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -105,7 +105,15 @@ body{
     padding-right: 20px;
 } */
 
+.brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
+.brand img {
+  width: 100px;
+}
 
 .rect1, .rect2 {
     display:flex;
@@ -193,6 +201,7 @@ body{
 
 .professionals h1 {
     display: flex;
+    justify-content: center;
     color: #A2847A;
     text-align: center;
 }
@@ -843,6 +852,12 @@ button {
 
 /* ======= ACCOUNT ======= */
 
+.acc2 {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
 .accdetails {
   display: flex;
   background: #A2847A;
@@ -853,7 +868,15 @@ button {
 
 .accdetails img {
   width: 120px;
-  margin-left: 10px;
+}
+
+.owned .sketchfab-embed-wrapper {
+  padding-left: 10px;
+}
+
+.accdetails .namestart {
+  padding-left: 5px;
+  color: #E6DCD3;
 }
 
 .accstats {
@@ -883,6 +906,10 @@ button {
   color: #E6DCD3;
 }
 
+.owned {
+  margin-bottom: 20px;
+}
+
 .owned h1{
   margin: 15px;
   color: #8c7066;
@@ -892,7 +919,7 @@ button {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .posts h1, .posts h5 {
@@ -906,7 +933,7 @@ button {
 
 .posts .show p{
   display: flex;
-  font-size: 15px;
+  font-size: 14px;
   align-items: end;
   margin-top: 10px;
   padding-left: 5px;
@@ -1208,7 +1235,7 @@ button {
       display: flex;
     }
 
-    /* ============================ MYSELF/FAM/CHILD/RS ============================ */
+    /* ============= MYSELF/FAM/CHILD/RS ============= */
 
     .navi img {
       color: #A2847A;
@@ -1264,7 +1291,7 @@ button {
 
 
 
-    /* ==================== NAVBAR ==================== */
+    /* ============ NAVBAR ============ */
 
     .logo i {
       display: none;
@@ -1297,7 +1324,69 @@ button {
       text-decoration: none;
     }
 
+    /* ====== ACCOUNT ====== */
+
+    .accdetails {
+      height: 250px;
+    }
+
+    .acc2 img {
+      height: 200px;
+      width: 200px;
+    }
+
+    .namestart h3 {
+      font-size: 30px;
+    }
+
+    .namestart h5 {
+      font-size: 15px;
+    }
+
+    .accstats .like {
+      width: 300px;
+      height: 200px;
+    }
+
+    .accstats .like p {
+      width: 300px;
+      font-size: 20px;
+    }
+
+    .accstats .like h3 {
+      font-size: 40px;
+    }
+
+    .owned h1 {
+      font-size: 17px;
+    }
+
+    .owned h5 {
+      font-size: 40px;
+    }
+
+    .show p {
+      width: 700px;
+      height: 50px;
+      font-size: 18px;
+    }
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width:800px) {
@@ -1353,8 +1442,44 @@ button {
   .whototal {
     display: flex;
   }
+
+  /* ===== INDEX ===== */
+
+  .brand img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .wearereach .box2 .rect1 {
+    width: 140px;
+    height: 15px;
+  }
+
+  .wearereach .box2 h1 {
+    font-size: 30px;
+  }
+
+  .wearereach p {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   
+  .numberstats .grp .circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .numberstats .grp .circle p {
+    font-size: 25px;
+  }
+
+  .numberstats .grp p {
+    font-size: 17px;
+    width: 150px;
+  }
+
 }
+
 
 @media screen and (min-width:425px) {
   .whototal {
@@ -1365,6 +1490,7 @@ button {
 
 @media screen and (max-width:330px) {
 
+  /* ===== MYSELF/CHILD/FAMILY/RS ===== */
   .qn {
     width: 300px;
     padding-left: 7px;
@@ -1387,5 +1513,173 @@ button {
     width: 295px;
   }
 
+  /* ===== CHECKIN ===== */
+  .text h1 {
+    font-size: 30px;
+  }
+
+  .box {
+    width: 270px;
+    height: 90px;
+  }
+
+}
+
+
+@media screen and (min-width:600px) {
+
+  /* ===== ACCOUNT ===== */
+
+  .accstats {
+    margin-bottom: 50px
+  }
+
+  .accstats .like {
+    width: 250px;
+    height: 150px;
+  }
+
+  .accstats .like p {
+    width: 200px;
+    font-size: 20px;
+    margin: 0 25px;
+  }
+
+  .accstats .like h3 {
+    font-size: 30px;
+  }
+
+  /* .owned .sketchfab-embed-wrapper {
+    padding-left: 10px;
+  } */
+
+  .owned h1 {
+    font-size: 35px;
+    padding-left: 5px;
+    margin: 0;
+  }
+
+  .owned {
+    padding-left: 25px;
+  }
+
+  .posts {
+    margin-left: 30px;
+  }
+
+  .posts h1 {
+    font-size: 35px;
+  }
+
+  .posts h5 {
+    font-size: 15px;
+  }
+
+  .posts .show p {
+    width: 500px;
+    height: 35px;
+    align-items: center;
+    padding-left: 10px;
+
+  }
+
+  /* ===== CL/FP ===== */
+  .fp {
+    height: 150px;
+  }
+
+  .points {
+    font-size: 20px;
+  }
+
+  .voucher .disc {
+    width: 350px;
+    height: 140px;
+  }
+
+  .voucher .disc h2 {
+    margin-top: 25px;
+  }
+
+  .voucher .disc .claim {
+    margin: 15px 135px;
+  }
+
+  /* ====== NUMBERSTATS ====== */
+
+  .numberstats {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+
+
+  .numberstats .grp {
+    width: 220px;
+    text-align: center;
+  }
+
+  .grp p {
+    font-size: 15px;
+  }
+
+  .professionals h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ===== PROFESSIONALS ===== */
+
+  .profbox {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profbox .prof {
+    margin: 20px 25px;
+  }
+
+  .professionals .prof .pic img {
+    width: 130px;
+    height: 130px;
+  }
+
+
+}
+
+@media screen and (min-width:1000px) {
+  
+/* ===== INDEX ===== */
+
+  .companies .giving img {
+    width: 700px;
+    height: 500px;
+  }
+
+  .companies .ntuc img {
+    width: 700px;
+    height: 500px;
+  }
+
+  .professionals h1 {
+    font-size: 40px;
+  }
+
+  .professionals .prof .pic img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .prof p {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .line h1 {
+    font-size: 35px;
+  }
+
+  .contact p {
+    font-size: 20px;
+  }
 
 }
