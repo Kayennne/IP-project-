@@ -46,7 +46,7 @@
 
 <h2>Testing</h2>
 <p>In terms of testing how the website works on different screens such as mobile and laptop, the laptop mostly shows content side by side, for example pictures on the left and text on the right etc. Whereas in the mobile view, the contents are all in a line, for example the picture on top, then the text below</p>
-<p> Some challenges we faced was some api issues, and also some of the content not being able to align to the center<p>
+<p> Some challenges we faced was some api issues, and also some of the content not being able to align to the center</p>
 
 <h6>Media</h6>
 <ul>
@@ -57,8 +57,11 @@
 <li>Logos were drawn by Jia Yun</li>
 </ul>
 
-<h1>Extra References<h1>
+<h1>Extra References</h1>
 <ul>
 <li>menu - https://youtu.be/dEdwDijoceY</li>
 <li>slideshow - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow</li>
 </ul>
+
+<h1>GITHUB LINK</h1>
+<p>https://github.com/Kayennne/REACH.git<p>
