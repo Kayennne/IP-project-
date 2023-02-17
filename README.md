@@ -16,10 +16,8 @@
 <h3>Existing Features</h3>
 <ol>
 <li>Allows users to be able to communicate with other users to ask and answer questions with the Q&A Forum</li>
-<li>Allows users to be able to see different events with the Calender, letting them keep track of theirs and their children's schedules and events</li>
 <li>Allows users to keep track of their weekly to-do with the To-Do List, allowing them to be more organised</li>
 <li>Allows users to keep their health in check with the Mental Wellness Check, making sure that they take care of themselves</li>
-<li>Motivational Quote of the Day to lift users spirits whenever they open the website</li>
 <li>Trophies awarded to users for reaching different milestones, rewarding them and giving them affirmation</li>
 </ol>
 
@@ -34,20 +32,33 @@
 <li>Adobe XD for website wireframe</li>
 <li>Visual Studio Code for main codes</li>
 <li>Jquery</li>
+<li>HTML - coding content in the website</li>
+<li>CSS - helps in designing the looks of the website</li>
+<li>Javascript - helps with backend like api, slideshow animation, lottie animations, menu</li>
 </ul>
 <h2>Extensions Used</h2>
 <ol>
 <li>Prettier - checks indentation of code when saving</li>
 <li>Live Server - runs code onto web browser</li>
+<li>LottiesFLies for VSCode - use lottie animations</li>
+<li>HTML CSS Support - You can view a list of id and class</li>
 </ol>
+
 <h2>Testing</h2>
 <p>In terms of testing how the website works on different screens such as mobile and laptop, the laptop mostly shows content side by side, for example pictures on the left and text on the right etc. Whereas in the mobile view, the contents are all in a line, for example the picture on top, then the text below</p>
+<p> Some challenges we faced was some api issues, and also some of the content not being able to align to the center<p>
 
 <h6>Media</h6>
 <ul>
 <li>Home Page Photo: <br>https://unsplash.com/photos/xDSD3Vmzh70</li>
 <li>NTUC Care logo: <br>https://www.ntuc.org.sg/wps/portal/up2/home/aboutntuc/ucare</li>
 <li>Giving.sg logo: <br>https://www.mercyrelief.org/partnerships/givingsg2x/</li>
-
+<li>CapitalLand logo: <br>https://www.capitaland.com/en.html</li>
 <li>Logos were drawn by Jia Yun</li>
+</ul>
+
+<h1>Extra References<h1>
+<ul>
+<li>menu - https://youtu.be/dEdwDijoceY</li>
+<li>slideshow - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow</li>
 </ul>
