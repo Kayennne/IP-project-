@@ -61,7 +61,12 @@
 <ul>
 <li>menu - https://youtu.be/dEdwDijoceY</li>
 <li>slideshow - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow</li>
+<li>icons - https://boxicons.com/</li>
 </ul>
 
 <h1>GITHUB LINK</h1>
 <p>https://github.com/Kayennne/REACH.git<p>
+
+<h1>Roles in the website</h1>
+<p>Front-end: Kayen<p>
+<p>Back-end: Jiayun
