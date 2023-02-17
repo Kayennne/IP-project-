@@ -51,6 +51,11 @@ body{
 .box a {
   text-decoration: none;
   color: #E6DCD3;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* INDEX PAGE - SLIDESHOW */
@@ -78,6 +83,15 @@ body{
     margin: auto;
 }
 
+.slideshow-container2 {
+  z-index: 0;
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
 .fade {
     animation-name: fade;
     animation-duration: 1s;
@@ -88,16 +102,55 @@ body{
     to {opacity: 1}
 }
 
+.checking {
+  background: #A2847A;
+  width: 220px;
+  border-radius: 7px;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checking p {
+  display: flex;
+  align-items: center;
+  color: #E6DCD3;
+  margin: 10px;
+}
+
+.choice {
+  display: flex;
+}
+
+.choice p {
+  background: #E6DCD3;
+  color: #8c7066;
+  width: 80px;
+  height: 30px;
+  justify-content: center;
+  border-radius: 7px;
+  margin: 10px;
+  display: flex;
+}
+
+.choice a {
+  text-decoration: none;
+  color: #8c7066;
+}
+
+
 /* INDEX PAGE - WE ARE REACH */
 
 .wearereach h1, .wearereach p{
-    
     display: flex;
     justify-content: center;
     color:#8c7066;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
+    margin: 15px;
 }
 
 /* .wearereach h1 {
@@ -108,7 +161,8 @@ body{
 .brand {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .brand img {
@@ -161,8 +215,8 @@ body{
 
 .numberstats .grp .circle {
   background: #E6DCD3;
-  height: 45px;
-  width: 45px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -175,6 +229,7 @@ body{
 }
 .numberstats .grp p {
   color: #E6DCD3;
+  padding-top: 7px;
 }
 
 /* INDEX PAGE - ORGANISATIONS */
@@ -463,6 +518,7 @@ nav.open ~ .overlay {
 .goal h5, .goal h1 {
   color: #A2847A;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 
@@ -520,6 +576,7 @@ nav.open ~ .overlay {
   display: flex;
   background-color: #A2847A;
   height: 40px;
+  width: 165px;
   margin: 15px 0;
   border-radius: 3px;
 }
@@ -551,7 +608,7 @@ input {
   display: flex;
   background-color: #A2847A;
   height: 40px;
-  width: 312px;
+  width: 305px;
   margin: 15px 0;
   border-radius: 3px;
 }
@@ -747,7 +804,7 @@ button {
 }
 
 .nodone {
-  background: #E6DCD3;
+  background: #D8CABF;
   width: 180px;
   height: 50px;
   display: flex;
@@ -758,7 +815,7 @@ button {
 }
 
 .nodone p {
-  color: #A2847A;
+  color: #8c7066;
   font-size: 14px
 }
 
@@ -775,8 +832,8 @@ button {
 }
 
 .finish p {
-  background: #E6DCD3;
-  color: #A2847A;
+  background: #D8CABF;
+  color: #8c7066;
   width: 180px;
   height: 50px;
   display: flex;
@@ -830,6 +887,10 @@ button {
   width: 290px;
   margin: auto;
   color: #8c7066;
+}
+
+.trophies .animalname h6 {
+  padding-top: 7px;
 }
 
 .sub button {
@@ -1062,8 +1123,14 @@ button {
   justify-content: center;
 }
 
+.sect .n {
+  width: 290px;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+}
+
 .sect .n  p {
-  padding-left: 17px;
   padding-bottom: 10px;
   color: #8c7066;
 }
@@ -1175,318 +1242,25 @@ button {
   color: #8c7066;
 }
 
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1000; */
+}
+
+.loading lottie-player {
+  width: 100%;
+  height: 100%;
+}
+
 
 
 /* ==================================================== WEB VERSION ==================================================== */
-
-@media screen and (min-width:992px) {
-    img {
-        display: flex;
-        vertical-align: middle;
-        height: 800px;
-        widows: 100%;
-        
-    }
-    
-    .wrapper {
-        width: 85vw;
-    }
-
-    .container {
-        height: 26vmin;
-        width: 26vmin;
-        font-size: 12px;
-    
-    }
-
-    /* ========== REGISTER ========== */
-
-    .profile img {
-      width: 300px;
-      height: 300px;
-    }
-
-    .name .first, .name .last{
-      display: flex;
-      background-color: #A2847A;
-      height: 50px;
-      width: 250px;
-      margin: 15px 0;
-      border-radius: 3px;
-    }
-
-    .info {
-      display: flex;
-      background-color: #A2847A;
-      height: 50px;
-      width: 550px;
-      margin: 15px 0;
-      border-radius: 3px;
-    }
-
-    .login img {
-      width: 300px;
-      height: 300px;
-    }
-
-    /* ========= MENTAL WELLNESS ========= */
-    
-    .whototal {
-      display: flex;
-    }
-
-    /* ============= MYSELF/FAM/CHILD/RS ============= */
-
-    .navi img {
-      color: #A2847A;
-      width: 30px;
-      height: 30px;
-    }
-
-    .rect1, .rect2 {
-      height: 17px;
-      width: 135px;
-    }
-
-    .myself {
-      padding-top: 20px;
-    }
-
-    .myself h1 {
-      font-size: 80px;
-    }
-
-    .phrase {
-      font-size: 25px;
-    }
-
-    .qn {
-      width: 500px;
-      font-size: 20px;
-      margin-right: 93px;
-    }
-
-    .questions {
-      font-size: 16px;
-    }
-    
-    .ans {
-      display: flex;
-      background-color: #A2847A;
-      height: 45px;
-      margin-top: 10px;
-      width: 600px;
-      border-radius: 5px;
-    }
-
-    .ans input {
-      width: 550px;
-    }
-
-    .trust {
-      font-size: 25px;
-      width: 450px;
-    }
-
-
-
-
-    /* ============ NAVBAR ============ */
-
-    .logo i {
-      display: none;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-    .navbar {
-      display: block;
-      width: inherit;
-    }
-
-    .logo {
-      width: 100%;
-    }
-
-    .navbar ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      text-decoration: none;
-      list-style: none;
-      width: max-content;
-    }
-
-    .navbar ul li a {
-      text-decoration: none;
-    }
-
-    /* ====== ACCOUNT ====== */
-
-    .accdetails {
-      height: 250px;
-    }
-
-    .acc2 img {
-      height: 200px;
-      width: 200px;
-    }
-
-    .namestart h3 {
-      font-size: 30px;
-    }
-
-    .namestart h5 {
-      font-size: 15px;
-    }
-
-    .accstats .like {
-      width: 300px;
-      height: 200px;
-    }
-
-    .accstats .like p {
-      width: 300px;
-      font-size: 20px;
-    }
-
-    .accstats .like h3 {
-      font-size: 40px;
-    }
-
-    .owned h1 {
-      font-size: 17px;
-    }
-
-    .owned h5 {
-      font-size: 40px;
-    }
-
-    .show p {
-      width: 700px;
-      height: 50px;
-      font-size: 18px;
-    }
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:800px) {
-  .logo i {
-    display: none;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 15px
-  }
-
-  .navbar {
-    display: block;
-    width: inherit;
-    padding-right: 10px;
-  }
-
-  .logo {
-    width: 100%;
-  }
-
-  .navbar ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    list-style: none;
-    width: max-content;
-  }
-
-  .navbar ul li a {
-    display: inline-block;
-    padding: 5px;
-    text-decoration: none;
-    color: #8c7066;
-  }
-
-  .navbar ul li {
-    margin: 5px
-  }
-
-  .navbar ul li a:hover {
-    color: #E6DCD3;
-    background: #b5998f;
-    padding: 5px;
-    border-radius: 7px;
-    transition: all 0.3s ease;
-  }
-
-  /*=== MENTAL WELLNESS ===*/
-  .whototal {
-    display: flex;
-  }
-
-  /* ===== INDEX ===== */
-
-  .brand img {
-    width: 160px;
-    height: 160px;
-  }
-
-  .wearereach .box2 .rect1 {
-    width: 140px;
-    height: 15px;
-  }
-
-  .wearereach .box2 h1 {
-    font-size: 30px;
-  }
-
-  .wearereach p {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  
-  .numberstats .grp .circle {
-    width: 70px;
-    height: 70px;
-  }
-
-  .numberstats .grp .circle p {
-    font-size: 25px;
-  }
-
-  .numberstats .grp p {
-    font-size: 17px;
-    width: 150px;
-  }
-
-}
-
-
-@media screen and (min-width:425px) {
-  .whototal {
-    display: flex;
-  }
-  
-}
 
 @media screen and (max-width:330px) {
 
@@ -1524,6 +1298,67 @@ button {
   }
 
 }
+
+
+
+
+@media screen and (min-width:425px) {
+  .whototal {
+    display: flex;
+  }
+  
+  /* ===== REWARDS ===== */
+
+  .search2 {
+    width: 320px;
+    height: 30px;
+  }
+
+  .search2 input {
+    width: 290px;
+  }
+
+  .malls a img {
+    width: 290px;
+  }
+
+  /* ===== FORUM ===== */
+
+  .smth {
+    width: 350px;
+    height: 30px;
+  }
+
+  .smth input {
+    width: 320px;
+  }
+
+  .sect .n {
+    width: 350px
+  }
+
+  .sect .n p {
+    font-size: 20px;
+  }
+
+  .sect .posted {
+    width: 350px;
+  }
+
+  /* ===== VACCINE ===== */
+
+  .topcomment {
+    width: 350px;
+  }
+
+  /* ===== FOOTER ===== */
+
+  .line ul li a i {
+    font-size: 40px;
+  }
+
+}
+
 
 
 @media screen and (min-width:600px) {
@@ -1643,8 +1478,555 @@ button {
     height: 130px;
   }
 
+  .mwtitle {
+    height: 150px;
+    justify-content: center;
+  }
+
+  .mwtitle h2 {
+    font-size: 30px;
+  }
+
+  .mwtitle h5 {
+    font-size: 15px;
+  }
+
+  .seek h3 {
+    font-size: 20px;
+  }
+
+  .seek .who ul li {
+    width: 200px;
+    height: 100px;
+    margin: 25px;
+  }
+
+  .seek .who ul li a {
+    font-size: 25px;
+  }
+
+  .goal {
+    width: 500px;
+  }
+
+  .goal h1 {
+    font-size: 35px;
+  }
+
+  .goal h5 {
+    font-size: 17px;
+  }
+
+  /* ========= TO-DO LIST ========= */
+
+    .bigtodo {
+      padding-bottom: 30px;
+    }
+    .bigtodo p {
+      font-size: 20px;
+    }
+
+    .todo p {
+      width: 400px;
+      height: 80px;
+      font-size: 19px;
+    }
+
+    .separate {
+      flex-direction: inherit;
+      justify-content: center;
+    }
+
+    .impt h6 {
+      font-size: 15px;
+    }
+
+    .finish {
+      height: 177px;
+    }
+
+    .finish h6 {
+      font-size: 15px;
+    }
+
+    /* ===== DOWN ===== */
+
+    .checking {
+      width: 300px;
+    }
+
+    .checking p {
+      margin: 20px;
+      font-size: 17px;
+    }
+
+    .choice p {
+      width: 120px;
+      height: 45px;
+      margin: 15px;
+    }
+
+  /* ===== FOOTER ===== */
+
+  .line ul li a i {
+    font-size: 50px;
+  }
+
+  /* ====== MODELS ====== */
+
+  iframe {
+    width: 400px;
+    height: 250px;
+  }
+
+  .animal .animalname {
+    width: 400px;
+  }
+}
+
+
+
+@media screen and (min-width:800px) {
+  .logo i {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 15px
+  }
+
+  .navbar {
+    display: block;
+    width: inherit;
+    padding-right: 10px;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    width: max-content;
+  }
+
+  .navbar ul li a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #8c7066;
+  }
+
+  .navbar ul li {
+    margin: 5px
+  }
+
+  .navbar ul li a:hover {
+    color: #E6DCD3;
+    background: #b5998f;
+    padding: 5px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+  }
+
+  /*=== MENTAL WELLNESS ===*/
+  .whototal {
+    display: flex;
+  }
+
+  /* ===== INDEX ===== */
+
+  .brand img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .wearereach .box2 .rect1 {
+    width: 140px;
+    height: 15px;
+  }
+
+  .wearereach .box2 h1 {
+    font-size: 30px;
+  }
+
+  .wearereach p {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 20px;
+  }
+  
+  .numberstats .grp .circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .numberstats .grp .circle p {
+    font-size: 25px;
+  }
+
+  .numberstats .grp p {
+    font-size: 17px;
+    width: 150px;
+  }
+
+  /* ===== FORUM ===== */
+
+  .search2 {
+    width: 380px;
+  }
+
+  .search2 input {
+    width: 360px;
+  }
+
+  .postsmth .smth {
+    width: 430px;
+  }
+
+  .smth input {
+    width: 400px;
+  }
+
+  .sect .n {
+    width: 430px;
+  }
+
+  .sect .n p {
+    font-size: 25px;
+  }
+
+  .sect .posted {
+    width: 430px;
+  }
+
+  /* ===== TODO-LIST ===== */
+  
+  .bigtodo p {
+    font-size: 30px;
+  }
+
+  .todo p {
+    font-size: 19px;
+  }
+
+  .impt {
+    width: 380px;
+    height: 220px;
+  }
+
+  .impt h6 {
+    font-size: 20px;
+  }
+
+  .nodone {
+    width: 300px;
+    height: 70px;
+  }
+
+  .nodone p {
+    font-size: 19px;
+  }
+
+  .finish {
+    width: 380px;
+    height: 220px;
+  }
+
+  .finish p {
+    width: 300px;
+    height: 70px;
+    font-size: 19px;
+  }
+
+  /* ===== FOOTER ===== */
+
+  .line ul li a i {
+    font-size: 60px;
+  }
+
 
 }
+
+
+
+
+
+
+
+@media screen and (min-width:992px) {
+  .malls a img {
+      display: flex;
+      vertical-align: middle;
+      height: 350px;
+      width: 500px;
+      
+  }
+  
+  .wrapper {
+      width: 85vw;
+  }
+
+  .container {
+      height: 26vmin;
+      width: 26vmin;
+      font-size: 12px;
+  
+  }
+
+  /* ========== REGISTER ========== */
+
+  .profile img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .name .first, .name .last{
+    display: flex;
+    background-color: #A2847A;
+    height: 50px;
+    width: 250px;
+    margin: 15px 0;
+    border-radius: 3px;
+  }
+
+  .info {
+    display: flex;
+    background-color: #A2847A;
+    height: 50px;
+    width: 550px;
+    margin: 15px 0;
+    border-radius: 3px;
+  }
+
+  .login img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* ========= MENTAL WELLNESS ========= */
+  
+  .whototal {
+    display: flex;
+  }
+
+  /* ============= MYSELF/FAM/CHILD/RS ============= */
+
+  .navi img {
+    color: #A2847A;
+    width: 30px;
+    height: 30px;
+  }
+
+  .rect1, .rect2 {
+    height: 17px;
+    width: 135px;
+  }
+
+  .myself {
+    padding-top: 20px;
+  }
+
+  .myself h1 {
+    font-size: 80px;
+  }
+
+  .phrase {
+    font-size: 25px;
+  }
+
+  .qn {
+    width: 500px;
+    font-size: 20px;
+    margin-right: 93px;
+  }
+
+  .questions {
+    font-size: 16px;
+  }
+  
+  .ans {
+    display: flex;
+    background-color: #A2847A;
+    height: 45px;
+    margin-top: 10px;
+    width: 600px;
+    border-radius: 5px;
+  }
+
+  .ans input {
+    width: 550px;
+  }
+
+  .trust {
+    font-size: 25px;
+    width: 450px;
+  }
+
+
+
+
+  /* ============ NAVBAR ============ */
+
+  .logo i {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .navbar {
+    display: block;
+    width: inherit;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+    width: max-content;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+  }
+
+  /* ====== ACCOUNT ====== */
+
+  .accdetails {
+    height: 250px;
+  }
+
+  .acc2 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .namestart h3 {
+    font-size: 30px;
+  }
+
+  .namestart h5 {
+    font-size: 15px;
+  }
+
+  .accstats .like {
+    width: 300px;
+    height: 200px;
+  }
+
+  .accstats .like p {
+    width: 300px;
+    font-size: 20px;
+  }
+
+  .accstats .like h3 {
+    font-size: 40px;
+  }
+
+  .owned h1 {
+    font-size: 35px;
+  }
+
+  .owned h5 {
+    font-size: 40px;
+  }
+
+  .show p {
+    width: 700px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  /* ======= FORUM ======= */
+
+  .search2 {
+    width: 530px;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .search2 input {
+    width: 510px;
+  }
+
+  .search2 input::placeholder {
+    font-size: 15px;
+  }
+
+  .postsmth .smth {
+    width: 600px;
+    height: 40px;
+  }
+
+  .smth input {
+    width: 560px;
+  }
+
+  .smth input::placeholder {
+    font-size: 15px;
+  }
+
+  .sect .n {
+    width: 600px;
+  }
+
+  .sect .n p {
+    font-size: 30px;
+  }
+
+  .sect .posted {
+    width: 600px;
+    height: 150px;
+  }
+
+  .sect .posted .cube {
+    align-items: center;
+    margin-bottom: 33px;
+  }
+
+  .posted .cube img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .posted .cube p {
+    font-size: 18px;
+  }
+
+  .bubble {
+    align-items: center;
+  }
+
+  .bubble img {
+    height: 25px;
+    width: 30px;
+  }
+
+  /* ===== FOOTER ===== */
+
+  .line ul li a i {
+    font-size: 70px;
+  }
+}
+
+
+
+
 
 @media screen and (min-width:1000px) {
   
@@ -1682,4 +2064,125 @@ button {
     font-size: 20px;
   }
 
+  /* ===== ACCOUNT ===== */
+
+  .accstats .like {
+    display: flex;
+    align-items: center;
+  }
+
+  .owned h1 {
+    font-size: 35px;
+  }
+
+  /* ===== REWARDS ===== */
+
+  .malls a img {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+@media screen and (min-width:1000px) {
+
+  /* ===== VACCINE ===== */
+
+  .bubble img {
+    width: 30px;
+    height: 25px;
+  }
+
+  /* ===== DOWN ===== */
+
+  .checking {
+    width: 450px;
+  }
+
+  .checking p {
+    font-size: 25px;
+  }
+
+  .choice p {
+    width: 150px;
+    height: 60px;
+  }
+
+  /* ===== INDEX ===== */
+
+  .brand img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .wearereach .box2 .rect1 {
+    width: 200px;
+    height: 25px;
+  }
+
+  .wearereach .box2 h1 {
+    font-size: 50px;
+  }
+
+  .wearereach p {
+    font-size: 30px;
+    padding: 60px;
+  }
+
+  .wearereach .box {
+    width: 200px;
+    height: 60px;
+  }
+
+  .numberstats .grp {
+    padding-top: 30px;
+  }
+
+  .numberstats .grp .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .numberstats .grp .circle p {
+    font-size: 40px;
+  }
+
+  .numberstats .grp p {
+    font-size: 25px;
+    width: 200px;
+    padding-top: 15px;
+  }
+
+  .organisation h1 {
+    font-size: 50px;
+    padding-top: 20px;
+  }
+
+  .professionals h1 {
+    font-size: 50px;
+  }
+
+  .profbox .prof {
+    margin: 30px 50px;
+  }
+
+  .professionals .prof .pic img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .line ul li a i {
+    font-size: 80px;
+  }
+
+  .contact p {
+    font-size: 30px;
+  }
+
+  /* ===== ACCOUNT ===== */
+
+  .owned h1 {
+    font-size: 35px;
+  }
 }
