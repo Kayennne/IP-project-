@@ -1582,6 +1582,14 @@ button {
   .animal .animalname {
     width: 400px;
   }
+
+  .sub {
+    width: 400px;
+  }
+
+  .sect .posted .cube {
+    margin-right: 10px;
+  }
 }
 
 
